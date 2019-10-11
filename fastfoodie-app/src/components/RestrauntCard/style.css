@@ -1,0 +1,5 @@
+.outer-card-body {
+  border: 1px solid black;
+  width: 35%;
+  height: 300px;
+}
