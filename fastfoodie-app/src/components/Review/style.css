@@ -1,5 +1,8 @@
 .review-card-body {
   border: 1px solid black;
   width: 45%;
-  height: 250px;
+  height: 234px;
+  position: relative;
+  margin-top: 250px;
+  left: 272px;
 }
