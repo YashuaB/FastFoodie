@@ -3,7 +3,7 @@ import React from "react"
 const SignUp = () => {
   return(
     <div>
-      <div>Sign Up Menu</div>
+      <div className="sign-up-menu">Sign Up Menu</div>
     </div>
   )
 }
