@@ -1,5 +1,20 @@
-.outer-card-body {
+.outer-card-body{
   border: 1px solid black;
-  width: 35%;
-  height: 300px;
+  width: 100%;
 }
+ .card-one ,.card-two ,.card-three {
+  border: 1px solid black;
+  width: 20%;
+  height: 300px;
+  margin-top: 340px;
+  display: inline-block;
+ 
+}
+
+.card-one{
+  margin-left: 270px;
+}
+.card-two, .card-three{
+  margin-left: 50px;
+}
+

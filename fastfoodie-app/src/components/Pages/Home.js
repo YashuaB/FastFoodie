@@ -11,8 +11,6 @@ class Home extends  Component {
       <SignUp/>
         <Modal/>
         <RestrauntCard/>
-        <RestrauntCard/>
-        <RestrauntCard/>
         <Review/>
       </div>
     )
