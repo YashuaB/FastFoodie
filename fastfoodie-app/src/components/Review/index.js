@@ -3,7 +3,8 @@ import "./style.css"
 
 const Review = () => {
   return(
-    <div>
+    <div className="r-container">
+      <h2>Daily Reviews</h2>
       <div className="review-card-body">
         <h2>Review Card Title</h2>
           <image>
