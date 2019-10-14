@@ -1,12 +1,14 @@
+
 .r-container{ 
   width: 99%;
   border: 1px solid black;
 }
 .review-card-body {
   border: 1px solid black;
-  width: 45%;
+  width: 40%;
   height: 234px;
   position: relative;
   margin-top: 250px;
   left: 272px;
+  bottom: 140px;
 }

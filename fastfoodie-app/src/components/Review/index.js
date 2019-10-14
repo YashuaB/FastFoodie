@@ -4,7 +4,7 @@ import "./style.css"
 const Review = () => {
   return(
     <div className="r-container">
-      <h2>Daily Reviews</h2>
+      <h2 className="review-title">Recent Reviews</h2>
       <div className="review-card-body">
         <h2>Review Card Title</h2>
           <image>
