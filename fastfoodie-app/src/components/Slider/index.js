@@ -6,23 +6,23 @@ import "./style.css"
 const SearchBar = () => {
   return(
     <div>
-      <input type="text" className="input" placeholder="Search..." />
+      <input type="text" className="main-searchbar" placeholder="Search..." />
     </div>
   )
 }
 
-const Modal = () => {
+const Slider = () => {
   return(
-    <div>
-      <div className="outer-container">
-      <h1 className="modal-text">Hello I'm a Modal</h1>
+    <div className="outer-container">
+      
+    <h1 className="slider-text">Hello I'm a Modal</h1>
       <Carousel/>
      <SearchBar />
       </div>
 
       
     
-    </div>
+    
   )
 }
 
@@ -80,7 +80,7 @@ class Carousel extends Component{
   render() {
     return (
       <div>
-    <img alt="" src={this.state.images[this.state.currentIndex]}/>
+    <img className="gallery-images" alt="" src={this.state.images[this.state.currentIndex]}/>
        
       </div>
     )
@@ -100,4 +100,4 @@ class Carousel extends Component{
 //  )
 // }
 
-export default Modal
+export default Slider

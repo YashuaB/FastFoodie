@@ -1,7 +1,24 @@
 .outer-container {
   border: 1px solid black;
-  width: 90%;
+  width: 97%;
   height: 600px;
   position: relative;
-  left: 85px;
+  left: 28px;
+}
+.main-searchbar{
+width:60%;
+height: 40px;
+position: relative;
+bottom:250px;
+left:20%;
+}
+.slider-text{
+  color: white;
+  position: absolute;
+  top:200px;
+  left:40%;
+}
+.gallery-images{
+  width: 100%;
+  height: 600px;
 }
