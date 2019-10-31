@@ -1,15 +1,24 @@
 import React from "react"
+import {Component} from "react"
 import "./style.css"
+
+const Logo = () =>{
+  return(
+    <div>
+    <h1>Logo</h1>
+    </div>)
+  }
 
 const Header  = () =>{
   return(
-    <div>
-      <div className="logo">
-      <h1>Hi I'm the Header</h1>
-      </div>
+    <div className="header">
+      <Logo/>
       
     </div>
   )
 }
 
+
+
 export default Header
+

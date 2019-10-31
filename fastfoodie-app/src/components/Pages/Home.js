@@ -1,5 +1,5 @@
 import React,{Component} from "react"
-import Modal from "../Modal/index"
+import Slider from "../Slider/index"
 import RestrauntCard from "../RestrauntCard/index"
 import Review from "../Review/index"
 import SignUp from "../SignUp/index"
@@ -9,7 +9,7 @@ class Home extends  Component {
     return(
       <div>
       <SignUp/>
-        <Modal/>
+        <Slider/>
         <RestrauntCard/>
         <Review/>
       </div>
