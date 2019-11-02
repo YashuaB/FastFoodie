@@ -1,9 +1,10 @@
 .outer-container {
   border: 1px solid black;
-  width: 97%;
+  width: 99.9%;
   height: 600px;
   position: relative;
-  left: 28px;
+  /* left: 28px; */
+  bottom:80px;
 }
 .main-searchbar{
 width:60%;

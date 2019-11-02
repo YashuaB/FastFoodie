@@ -1,6 +1,7 @@
 import React from "react"
 import {Component} from "react"
 import "./style.css"
+import Ham from "../images/ham2.jpg"
 
 
 const SearchBar = () => {
@@ -34,7 +35,7 @@ class Carousel extends Component{
     this.state = {
       images: [ 
         "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg",
-        "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg",
+        Ham,
         "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
         "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/desert.jpg",
         "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/mountains.jpg",
