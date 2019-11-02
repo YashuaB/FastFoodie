@@ -11,7 +11,6 @@ class SignUpButton extends Component{
 
       this.state = {
       hover: false,
-      style: " ",
       }
     }
 
@@ -38,12 +37,6 @@ class SignUpButton extends Component{
       )
     }
 }
-// const SignUp = () => {
-//   return(
-//     <div>
-//       <div className="sign-up-menu">Sign Up Menu</div>
-//     </div>
-//   )
-// }
+
 
 export default SignUpButton
