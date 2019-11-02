@@ -5,7 +5,7 @@ import "./style.css"
 const Logo = () =>{
   return(
     <div>
-    <h1>Logo</h1>
+    <h1 className="logo">FastFoodie</h1>
     </div>)
   }
 

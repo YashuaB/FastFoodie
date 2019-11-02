@@ -1,7 +1,7 @@
 .nav {
   position: absolute;
-    left: 71%;
-    top: 37px;
+    left: 64%;
+    top: 18px;
 }
 
 ul {
@@ -9,7 +9,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  /* background-color: #333; */
 }
 
 li {

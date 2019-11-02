@@ -1,0 +1,7 @@
+.sign-up-button{
+  position: absolute;
+    top: 33px;
+    left: 83%;
+    width: 112px;
+    z-index: 200;
+}

@@ -15,7 +15,7 @@ const Slider = () => {
   return(
     <div className="outer-container">
       
-    <h1 className="slider-text">Hello I'm a Modal</h1>
+    <h1 className="slider-text">Hello I'm a Slider</h1>
       <Carousel/>
      <SearchBar />
       </div>
