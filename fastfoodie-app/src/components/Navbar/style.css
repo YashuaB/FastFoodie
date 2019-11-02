@@ -1,6 +1,6 @@
 .nav {
   position: absolute;
-    left: 64%;
+    left: 60%;
     top: 18px;
     z-index: 10;
 }
@@ -21,6 +21,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
+  font-size: 22px;
   padding: 14px 16px;
   text-decoration: none;
 }
