@@ -19,22 +19,22 @@ class  UserSignUp extends Component{
 
   render(){
     return(
-      <div className="user-form"  > 
-        <div>
-          <div>
-          <input placeholder="Email"></input>
-          </div> 
-          <div>
-          <input placeholder="Password"></input>
-          </div>
-          <div>
-          <input placeholder="Password"></input>
-          </div>
+      <div> 
+        <form className="user-form" >
+          <label for="email">Email</label>
+          <input 
+          placeholder="Email"></input>
+          
+          <label for="password">Email</label>
+          <input 
+          placeholder="Password"></input>
+        
           <button>Login</button>
-          <button>Button</button>
+          <p>New Users sign up</p>
+          <button>Sign Up</button>
 
          
-        </div>
+        </form>
       </div>
     )
   }
