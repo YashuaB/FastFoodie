@@ -20,18 +20,28 @@ class SignUpButton extends Component{
             <div class="dropdown">
               <a href="javascript:void(0)" className="dropbtn">Sign Up/ Login</a>
               <div class="dropdown-content">
+                
                 <form className="user-form" >
-                          <label for="email">Email</label>
+                <h2>Login</h2>
+                  <div>
+                  <label for="email">Email</label>
                           <input 
+                          className="email"
+                          type="text"
                           placeholder="Email"></input>
                           
                           <label for="password">Password</label>
-                          <input 
+                          <input className="password"
+                          type="password"
                           placeholder="Password"></input>
-                        
-                          <button>Login</button>
-                          <p>New Users sign up</p>
-                          <button>Sign Up</button>   
+                  </div>
+                          
+                        <div>
+                        <button type="submit">Login</button>
+                        <p>New Users Create an Account</p>
+                        <a>Sign Up</a>
+                        </div>
+                          
                 </form>
               </div>
           </div>

@@ -10,21 +10,31 @@
 .user-form{
   background-color:white;
   height: 420px;
-  width:170%;
+  width:182%;
   border-radius: 18px;
 }
+.email, 
+    .password { 
+        width: 90%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+
 
 
 .dropdown a, .dropbtn {
   display: inline-block;
-  color: white;
+  /* color: white; */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .dropdown a:hover, .dropdown:hover .dropbtn {
-  background-color: gray;
+ color:yellow;
 }
 
 div.dropdown {
@@ -33,15 +43,15 @@ div.dropdown {
 
 .dropdown-content {
   position: relative;
-  right:172px;
+  right:152px;
   /* top:70px; */
   display: none;
   position: absolute;
   /* background-color: #f9f9f9; */
-  min-width: 160px;
+  /* min-width: 160px; */
   box-shadow: -25px 19px 18px 0px rgba(0,0,0,0.75);
   
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .dropdown-content form {
