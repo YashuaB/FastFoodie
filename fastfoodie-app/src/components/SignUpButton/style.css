@@ -23,17 +23,26 @@
         box-sizing: border-box; 
     } 
 
+.sign-in-text{
+font-size: 15px;
+}
 
+.sign-in-link{
+font-size: 16px;
+/* font-style: inherit; */
+color:#535050;
+text-decoration: none;
+}
 
-.dropdown a, .dropbtn {
+.dropdown  .dropbtn {
   display: inline-block;
-  /* color: white; */
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.dropdown a:hover, .dropdown:hover .dropbtn {
+ .dropdown:hover .dropbtn {
  color:yellow;
 }
 
@@ -62,8 +71,29 @@ div.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+/* .dropdown-content a:hover {background-color: #f1f1f1;} */
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.login-button{
+  background-color:yellow;
+  
+  width: 70%;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  border-radius: 28px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+ 
+}
+.login-button{background-image: linear-gradient(to right, red , yellow)}
+.login-button:hover {opacity: 1}
