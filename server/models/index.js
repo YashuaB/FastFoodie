@@ -5,7 +5,7 @@ const path = require("path")
 const Sequelize = require("sequelize")
 const basename = path.basename(module.filename)
 const env = process.env.NODE_ENV || "development"
-const config = require()
+const config = require(__dirname + "/../config/config.json")[env]
 
 const db = {}
 
@@ -24,7 +24,7 @@ fs
 
   })
   .forEach(function(file){
-    let model = sequelize["import"](path.join(__dirname, file))
+     let model = sequelize["import"](path.join(__dirname, file))
     db[model.name] = model
   })
 
