@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended:true }))
 app.use(express.json())
 app.use(morgan('dev'))
 
-// require("./routes")
+require("./routes/user-api-routes")(app)
 
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
