@@ -10,7 +10,7 @@ app.get("/api/user-login", function(req,res){
   })
 })
 
-app.post("/api/user-login", function(req,res){
+app.post("/api/user-login-ps", function(req,res){
 // Create a User with the data available in req.body
   console.log(req.body)
    db.User.create(req.body)

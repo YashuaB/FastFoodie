@@ -1,9 +1,9 @@
 
 module.exports = function(sequelize, DataTypes){
- var User = sequelize.define("User", {
+ let User = sequelize.define("User", {
     username: {
      type: DataTypes.STRING,
-     allowNull: false,
+     allowNull: true,
      validate:{
        len:[6,25]
      } 
