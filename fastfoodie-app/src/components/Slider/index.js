@@ -1,16 +1,17 @@
 import React from "react"
 import {Component} from "react"
+import SearchBar from "../SearchBar/index"
 import "./style.css"
 import Ham from "../images/ham2.jpg"
 
 
-const SearchBar = () => {
-  return(
-    <div>
-      <input type="text" className="main-searchbar" placeholder="Search..." />
-    </div>
-  )
-}
+// const SearchBar = () => {
+//   return(
+//     <div>
+//       <input type="text" className="main-searchbar" placeholder="Search..." />
+//     </div>
+//   )
+// }
 
 const Slider = () => {
   return(
