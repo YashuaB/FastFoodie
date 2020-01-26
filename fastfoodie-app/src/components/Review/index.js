@@ -7,9 +7,9 @@ const Review = () => {
       <h2 className="review-title">Recent Reviews</h2>
       <div className="review-card-body">
         <h2>Review Card Title</h2>
-          <image>
+          <img/>
             image of restraunt
-          </image>
+         
             <div>star rating</div>
           <div>
            <p>review text</p>

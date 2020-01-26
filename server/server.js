@@ -1,8 +1,8 @@
 const express = require("express")
 const cors = require("cors")
-require("dotenv").config()
 const morgan = require("morgan")
 const app = express()
+require("dotenv").config()
 
 const PORT = process.env.PORT || 8080
 

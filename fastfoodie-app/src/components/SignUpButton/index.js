@@ -56,12 +56,12 @@ class SignUpButton extends Component{
         <div className="sign-up-button" >
             <div className="dropdown">
               <a href="javascript:void(0)" className="dropbtn">Sign Up/ Login</a>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 
                 <form className="user-form" >
                 <h2>Login</h2>
                   <div>
-                  <label for="email">Email</label>
+                  <label htmlFor="email">Email</label>
                           <input 
                           className="email"
                           value={this.state.email}
@@ -70,7 +70,7 @@ class SignUpButton extends Component{
                           type="text"
                           placeholder="Email"></input>
                           
-                          <label for="password">Password</label>
+                          <label htmlFor="password">Password</label>
                           <input 
                           className="password"
                           value={this.state.password}

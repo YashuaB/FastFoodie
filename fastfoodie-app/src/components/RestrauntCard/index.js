@@ -7,9 +7,9 @@ const Card = () => {
     <div>
       
       <h2>Restraunt Card</h2>
-        <image>
+        <img>
         
-        </image>
+        </img>
      
     </div>
   )
