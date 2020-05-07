@@ -1,8 +1,9 @@
 import React,{Component} from "react"
 import Slider from "../Slider/index"
-import RestrauntCard from "../RestrauntCard/index"
+import RestruantCard from "../RestrauntCard/index"
 import Review from "../Review/index"
 import SignUpButton from "../SignUpButton/index"
+
 
 class Home extends  Component {
   render(){
@@ -10,7 +11,7 @@ class Home extends  Component {
       <div>
       <SignUpButton/>
         <Slider/>
-        <RestrauntCard/>
+          <RestruantCard/>
         <Review/>
       </div>
     )

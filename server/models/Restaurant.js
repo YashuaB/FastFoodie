@@ -1,5 +1,5 @@
 
-module.export = function(sequelize, DataTypes){
+module.exports = function(sequelize, DataTypes){
   let Restaurant = sequelize.define("Restaurant", {
     companyName: {
       type: DataTypes.STRING,
@@ -9,8 +9,8 @@ module.export = function(sequelize, DataTypes){
       }
     },
     description:{
-      type:DataTypes,
-      allowNull: false, 
+      type: DataTypes.STRING,
+      allowNull: false 
     },
     rating:{
       type: DataTypes.NUMBER,
@@ -20,13 +20,14 @@ module.export = function(sequelize, DataTypes){
       type: DataTypes.STRING,
       allowNull:false
     },
-    location:{
+    address:{
       type: DataTypes.STRING,
       allowNull:false
     },
-    phoneNumber:{
+    zipcode:{
       type: DataTypes.NUMBER,
-      allowNull:false
+      allowNull:true
     }
   })
+  return Restaurant
 }

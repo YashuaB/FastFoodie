@@ -1,34 +1,65 @@
 import React from "react"
+import { Component } from "react"
+import image from './image.json'
 import "./style.css"
 
+// var img = [{
+     
+//   url: "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
+//   name: "hamburger"
+// },{
 
-const Card = () => {
+//   url: "./images/burger.jpg",
+//   name: "nacho"
+// },{
+
+//   url: "./images/burger.jpg",
+//   name: "food"
+// }]
+
+const CardContainer = (props) => {
   return(
     <div>
-      
-      <h2>Restraunt Card</h2>
-        <img>
         
-        </img>
-     
-    </div>
+    <h2>Restraunt Card</h2>
+      
+        <a href={props.link}>
+          <img alt={props.name} src={props.image}/>
+         </a>
+       
+  </div>
   )
 }
 
-const RestrauntCard = () => {
-  return(
-    <div>
+class RestruantCard extends Component {
+
+  state = {
+   image
+  }
+
+
+  render () {
+    return(
+      <div>
       <div className="outer-card-body">
-          <div className="card-one"><Card/>
-        </div>
-          <div className="card-two"><Card/>
-          </div>
-        <div className="card-three"><Card/>
-        </div>
+      {this.state.image.map(img => (
+        <CardContainer 
+          name={img.name} 
+          image={img.image}
+          link={img.image}
+          
+          />
+         
+      ) )}
         
       </div>
     </div>
-  )
+
+    )
+  }
+  
 }
 
-export default RestrauntCard
+
+
+export default RestruantCard

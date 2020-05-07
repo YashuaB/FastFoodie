@@ -1,21 +1,21 @@
 import React from "react"
 import {Component} from "react"
 import dotenv from "dotenv"
-import yelpAPI from "yelp-api"
+import "./style.css"
+// const getApi = require("/FastFoodie/server/routes/restaurant-api-routes.js")  
+// import yelpAPI from "yelp-api"
 import axios from "axios"
 // import cors from "cors"
-import "./style.css"
+
 dotenv.config()
 
 
 
 class SearchBar extends Component{
  state = {
-
-  searchResults: null
+  searchResults: null,
   //  zipcode: "",
   //  searchItem:""
-
  }
   // Getting the value and name of the input which triggered the change
   // handleInputChange = (e) => {
@@ -56,24 +56,25 @@ class SearchBar extends Component{
 // });
     
 console.log("test1", searchItem)
+
     if(searchItem && searchZip){
-
-      var myHeaders = new Headers();
-      myHeaders.append("Content-Type", "application/x-www-form-urlencoded", "Authorization" , "Bearer" + API_KEY);
+        // getApi(searchZip,searchItem)
+      // var myHeaders = new Headers();
+      // myHeaders.append("Content-Type", "application/x-www-form-urlencoded", "Authorization" , "Bearer" + API_KEY);
       
-      var urlencoded = new URLSearchParams();
+      // var urlencoded = new URLSearchParams();
       
-      var requestOptions = {
-        method: 'GET',
-        headers: myHeaders,
+      // var requestOptions = {
+      //   method: 'GET',
+      //   headers: myHeaders,
         
-        redirect: 'follow'
-      };
+      //   redirect: 'follow'
+      // };
       
-      fetch(`https://api.yelp.com/v3/businesses/search?term=${searchItem}&location=${searchZip}`, requestOptions)
-        .then(response => response.text())
-        .then(result => console.log(result))
-        .catch(error => console.log('error', error));
+      // fetch(`https://api.yelp.com/v3/businesses/search?term=${searchItem}&location=${searchZip}`, requestOptions)
+      //   .then(response => response.text())
+      //   .then(result => console.log(result))
+      //   .catch(error => console.log('error', error));
 
 
 
@@ -87,23 +88,23 @@ console.log("test1", searchItem)
 
 
 
-
-//   let url = `https://api.yelp.com/v3/businesses/search?term=${searchItem}&location=${searchZip}`
-//   axios.get(url,{
-//     headers: {
-//     "Content-Type": "application/x-www-form-urlencoded",
-//     "Authorization" :"Bearer" + API_KEY,
-//     'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' }
-// })
-//       .then((res) =>{
-//         const restName = res.data.businesses[0].name
-//         console.log("test2")
-//         this.setState({
-//           searchResults: restName
-//         })
-//         console.log("test3")
-//         console.log(this.state.searchResults)
-//       })
+      const proxyurl = "https://cors-anywhere.herokuapp.com/"
+  let url = `http://api.yelp.com/v3/businesses/search?term=${searchItem}&location=${searchZip}`
+  axios.get(url,{
+    headers: {
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Authorization" :"Bearer" + "IVQX6I_VXWs1RTms3_zVU5UNhS50J5fvBjzwfUi9MPcl4oj-TfBkPrHOt1s1O8qGGvP4nknRgcQ90h-kwnOsnYsBGLDGGbulOawkwHboviotatAERl8xGvhSD74nXnYx",
+     }
+})
+      .then((res) =>{
+        const restName = res.data.businesses[0].name
+        console.log("test2")
+        this.setState({
+          searchResults: restName
+        })
+        console.log("test3")
+        console.log(this.state.searchResults)
+      })
     }
   }
 
