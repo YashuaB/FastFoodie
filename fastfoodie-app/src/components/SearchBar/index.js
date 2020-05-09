@@ -113,24 +113,28 @@ console.log("test1", searchItem)
   // Updating the input's state
   render(){
     return(
-      <form onSubmit={this.searchQueryInput}>
-        <input 
-        value={this.state.searchItem}
-        name="searchItem"
-        type="text" 
-        className="main-searchbar" 
-        placeholder="Search..." />
+      <form className="form-body" onSubmit={this.searchQueryInput}>
+        <div className="search-field-container">
+          <div className="item-field">
+            <input 
+            value={this.state.searchItem}
+            name="searchItem"
+            type="text" 
+            className="main-searchbar" 
+            placeholder="Search..." />
+          </div>
+         
+        <div className="zip-field">
+          <input 
+          value={this.state.zipcode}
+          name="zipcode"
+          type="text" 
+          className="main-searchbar" 
+          placeholder="Zipcode..." />
+        </div>
 
-        <input 
-        value={this.state.zipcode}
-        name="zipcode"
-        type="text" 
-        className="main-searchbar" 
-        placeholder="Zipcode..." />
-
-        <button>Submit</button>
-        
-
+              <button>Submit</button>
+        </div>
 
       </form>
     )

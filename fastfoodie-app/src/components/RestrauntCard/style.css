@@ -2,19 +2,17 @@
   border: 1px solid black;
   width:99%;
 }
- .card-one ,.card-two ,.card-three {
-  border: 1px solid black;
-  width: 20%;
-  height: 300px;
-  margin-top: 150px;
+ .card-title{
+  text-align: center;
+ }
+.card{
+  width: 300px;
   display: inline-block;
- 
+  position: relative;
+  left: 160px;
+  padding-left:91px;
 }
-
 .card-one{
-  margin-left: 270px;
-}
-.card-two, .card-three{
-  margin-left: 50px;
+  
 }
 
