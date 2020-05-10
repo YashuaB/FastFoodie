@@ -133,7 +133,7 @@ console.log("test1", searchItem)
           placeholder="Zipcode..." />
         </div>
 
-              <button>Submit</button>
+              <button className="search-food-btn">Submit</button>
         </div>
 
       </form>

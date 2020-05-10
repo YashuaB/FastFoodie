@@ -6,16 +6,22 @@
   left:20%;
   }
   .item-field{
-    width: 1100px;
+    width: 800px;
     position: relative;
     left: 340px;
   }
   .zip-field{
     width: 260px;
     position: relative;
-    left: 1140px;
+    left: 900px;
     bottom: 45px;
   }
   .form-body{
    
+  }
+  .search-food-btn{
+    position: relative;
+    left: 1117px;
+    bottom: 341px;
+    height: 46px;
   }

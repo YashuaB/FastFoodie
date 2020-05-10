@@ -8,7 +8,7 @@ import SignUpButton from "../SignUpButton/index"
 class Home extends  Component {
   render(){
     return(
-      <div>
+      <div className="wrapper">
       <SignUpButton/>
         <Slider/>
           <RestruantCard/>
