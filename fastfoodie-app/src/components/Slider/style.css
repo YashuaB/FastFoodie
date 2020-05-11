@@ -1,6 +1,4 @@
 .outer-container {
-  border: 1px solid black;
-  width: 99.9%;
   height: 600px;
   position: relative;
   /* left: 28px; */
