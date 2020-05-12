@@ -1,5 +1,5 @@
 .outer-container {
-  height: 600px;
+  height: 700px;
   position: relative;
   /* left: 28px; */
   bottom:80px;
@@ -19,5 +19,5 @@ left:20%;
 }
 .gallery-images{
   width: 100%;
-  height: 600px;
+  height: 700px;
 }

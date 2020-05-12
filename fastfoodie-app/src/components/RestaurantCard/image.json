@@ -1,13 +1,13 @@
 [{
   "url" : "https://google.com",
-  "image": "https://via.placeholder.com/300x200.png",
+  "image": "https://via.placeholder.com/480x300.png",
   "name": "hamburger"
 },{
   "url" : "https://google.com",
-  "image": "https://via.placeholder.com/300x200.png",
+  "image": "https://via.placeholder.com/480x300.png",
   "name": "nacho"
 },{
   "url" : "https://google.com",
-  "image": "https://via.placeholder.com/300x200.png",
+  "image": "https://via.placeholder.com/480x300.png",
   "name": "food"
 }]

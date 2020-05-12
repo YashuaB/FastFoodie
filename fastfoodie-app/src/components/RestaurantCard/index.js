@@ -9,8 +9,10 @@ const CardContainer = (props) => {
   return(
     <div className="card">
         
-    <h2 className="card-title">Restraunt Card</h2>
+   
       <div className="card-one">
+        <h3 className="Restaurant Title"></h3>
+        <p className="Restaurant Rating"></p>
         <a href={props.link}>
           <img alt={props.name} src={props.image}/>
          </a>
@@ -19,7 +21,7 @@ const CardContainer = (props) => {
   )
 }
 
-class RestruantCard extends Component {
+class RestaurantCard extends Component {
 
   state = {
    image
@@ -30,15 +32,14 @@ class RestruantCard extends Component {
     return(
       <div>
         <div className="outer-card-body">
+        <h2 className="card-title">New Tasty Bites</h2>
         {this.state.image.map(img => (
           <CardContainer 
             name={img.name} 
             image={img.image}
             link={img.url}
             
-            />
-          
-        ) )}
+            />) )}
           
         </div>
     </div>
@@ -50,4 +51,4 @@ class RestruantCard extends Component {
 
 
 
-export default RestruantCard
+export default RestaurantCard

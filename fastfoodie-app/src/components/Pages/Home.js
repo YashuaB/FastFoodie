@@ -1,6 +1,6 @@
 import React,{Component} from "react"
 import Slider from "../Slider/index"
-import RestruantCard from "../RestrauntCard/index"
+import RestruantCard from "../RestaurantCard/index"
 import Review from "../Review/index"
 import SignUpButton from "../SignUpButton/index"
 

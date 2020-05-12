@@ -6,7 +6,7 @@ const Review = () => {
     <div className="r-container">
       <h2 className="review-title">Recent Reviews</h2>
       <div className="review-card-body">
-        <h2>Review Card Title</h2>
+        <h2 className="user-review-title">Review Card Title</h2>
           <img/>
             image of restraunt
          
