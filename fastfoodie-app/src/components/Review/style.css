@@ -1,6 +1,7 @@
 
 .r-container{ 
   height: 600px;
+  background-color: white;
   /* background-color: #c74b0e; */
   /* background-color: #e84c00c2; */
 }
@@ -19,4 +20,45 @@
   margin-top: 250px;
   left: 272px;
   bottom: 140px;
+}
+
+.rating {
+  position: relative;
+  top: 15px;
+  left: 461px;
+}
+.restaurant-name{
+  position: relative;
+  left: 404px;
+}
+.user-image{
+  position: relative;
+  bottom: 172px;
+  left: 29px;
+}
+.restaurant-image{
+   position: relative;
+   left: 300px;
+   bottom: 15px;
+}
+.user-name{
+  position: relative;
+   bottom: 247px;
+   left: 109px;
+
+
+}
+.review-text-intro{
+  position: relative;
+    bottom: 259px;
+    left: 109px;
+}
+.user-review{
+  position: relative;
+  bottom: 270px;
+  left: 26px;
+}
+.user-text{
+  width: 48%;
+  font-size: 13px;
 }

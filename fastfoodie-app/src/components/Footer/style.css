@@ -1,4 +1,10 @@
-.copy-right{
-  /* background-color: ; */
+.footer{
   text-align: center;
+  height: 80px;
+  background-color: #ffff00a3;
+  margin-bottom: 0;
+}
+
+.copy-right{
+  margin: 0;
 }
