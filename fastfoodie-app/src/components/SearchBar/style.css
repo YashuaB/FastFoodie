@@ -1,27 +1,30 @@
 .main-searchbar{
-  width:53%;
-  height: 40px;
+  width: 74%;
+  height: 55px;
   position: relative;
-  bottom:250px;
-  left:20%;
+  bottom: 314px;
+  left: 13%;
+
   }
   .item-field{
-    width: 800px;
-    position: relative;
-    left: 340px;
+   width: 901px;
+   position: relative;
+   left: 340px
+
   }
   .zip-field{
-    width: 260px;
-    position: relative;
-    left: 900px;
-    bottom: 45px;
+   width: 459px;
+   position: relative;
+   left: 900px;
+   bottom: 61px;
+
   }
   .form-body{
    
   }
   .search-food-btn{
     position: relative;
-    left: 1117px;
-    bottom: 341px;
-    height: 46px;
+    left: 1310px;
+    bottom: 436px;
+    height: 62px;
   }

@@ -10,7 +10,7 @@ const Review = (props) => {
       <a href={props.userLink}><img className="user-image" alt={props.nameUser} src={props.imageUser}/></a>
         <a href={props.restaurantLink}><img className="restaurant-image" alt={props.restaurantAlt} src={props.restaurantImage}/></a>
         <h3 className="user-name">{props.user}</h3>
-        <p className="review-text-intro">Review writen on</p>
+        <p className="review-text-intro">Review writen on:</p>
         <article className="user-review">
         <p className="user-text">{props.text}</p>
         </article>

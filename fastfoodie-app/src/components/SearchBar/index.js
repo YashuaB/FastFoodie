@@ -118,9 +118,10 @@ console.log("test1", searchItem)
           <div className="item-field">
             <input 
             value={this.state.searchItem}
+            className="main-searchbar" 
             name="searchItem"
             type="text" 
-            className="main-searchbar" 
+            
             placeholder="Search..." />
           </div>
          
