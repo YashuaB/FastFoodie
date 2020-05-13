@@ -8,8 +8,6 @@ import "./style.css"
 const CardContainer = (props) => {
   return(
     <div className="card">
-        
-   
       <div className="card-one">
         <h3 className="Restaurant Title"></h3>
         <p className="Restaurant Rating"></p>

@@ -1,0 +1,11 @@
+[{
+  "profileUrl": "google.com",
+  "username": "Rick Sanchez",
+  "userImage": "https://via.placeholder.com/60x50.png",
+  "userReview": "Lorem ipsum dolor sit amet consectetur adipiscing elit.  Nullam eget ultrices mauris.Vestibulum efficitur mauris non augue placerat volutpat. Curabitur id nulla a eros venenatis molestie in non urna. In in erat auctor gravida ipsum sagittis eleifend elit. Donec eu fermentum odio vel hendrerit lorem. Nulla eget commodo felis.Vivamus non tellus egestas diam malesuada dapibus ",
+  "rating": "4 star rating",
+  "restaurantImage": "https://via.placeholder.com/290x150.png",
+  "restaurantName": "Burger Co.",
+  "restaurantUrl": "google.com"
+  
+}]
