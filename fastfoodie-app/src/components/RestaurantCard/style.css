@@ -39,3 +39,17 @@
   width: 480px;
   height: 300px;
 }
+.food-link{
+  text-decoration: none;
+    color: black;
+}
+.restaurant-rating{
+  position: relative;
+    bottom: 84px;
+    left: 40px;
+}
+.restaurant-title{
+  position: relative;
+    bottom: 99px;
+    left: 40px;
+}

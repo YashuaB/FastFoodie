@@ -13,8 +13,9 @@ const CardContainer = (props) => {
           <img  className="food-image" alt={props.name} src={props.image}/>
          </a>
       </div>
-      <h3 className="restaurant-Title">{props.restaurantName}</h3>
-        <p className="restaurant-rating">{props.rating}</p>
+      <p className="restaurant-rating">{props.rating}</p>
+      <a className="food-link" href={props.link}><h3 className="restaurant-title">{props.restaurantName}</h3></a>
+       
   </div>
   )
 }
@@ -33,10 +34,12 @@ class RestaurantCard extends Component {
         <h2 className="title">New Tasty Bites</h2>
         {this.state.resData.map(data => (
           <CardContainer 
-            name={data.name} 
+            name={data.restaurant} 
             image={data.image}
             link={data.url}
-            
+            restaurantName={data.restaurant}
+            rating={data.rating}
+            link={data.url}
             />) )}
           
         </div>
