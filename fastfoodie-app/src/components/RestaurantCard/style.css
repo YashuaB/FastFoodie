@@ -1,8 +1,8 @@
-.outer-card-body{
+.restaurantCard-container{
  height: 600px;
 
 }
- .card-title{
+ .title{
   width: 70%;
   text-align: center;
   /* color:yellow; */
@@ -30,6 +30,12 @@
 
 }
 .card-one{
-  
+  width: 480px;
+  height: 374px;
+  background-color: white;
+  border: 1px solid rgb(151, 151, 151);
 }
-
+.food-image{
+  width: 480px;
+  height: 300px;
+}

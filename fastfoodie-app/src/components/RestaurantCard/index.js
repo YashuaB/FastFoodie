@@ -1,6 +1,6 @@
 import React from "react"
 import { Component } from "react"
-import image from './image.json'
+import resData from './res-card-data.json'
 import "./style.css"
 
 
@@ -9,12 +9,12 @@ const CardContainer = (props) => {
   return(
     <div className="card">
       <div className="card-one">
-        <h3 className="Restaurant Title"></h3>
-        <p className="Restaurant Rating"></p>
         <a href={props.link}>
-          <img alt={props.name} src={props.image}/>
+          <img  className="food-image" alt={props.name} src={props.image}/>
          </a>
       </div>
+      <h3 className="restaurant-Title">{props.restaurantName}</h3>
+        <p className="restaurant-rating">{props.rating}</p>
   </div>
   )
 }
@@ -22,20 +22,20 @@ const CardContainer = (props) => {
 class RestaurantCard extends Component {
 
   state = {
-   image
+   resData
   }
 
 
   render () {
     return(
       <div>
-        <div className="outer-card-body">
-        <h2 className="card-title">New Tasty Bites</h2>
-        {this.state.image.map(img => (
+        <div className="restaurantCard-container">
+        <h2 className="title">New Tasty Bites</h2>
+        {this.state.resData.map(data => (
           <CardContainer 
-            name={img.name} 
-            image={img.image}
-            link={img.url}
+            name={data.name} 
+            image={data.image}
+            link={data.url}
             
             />) )}
           

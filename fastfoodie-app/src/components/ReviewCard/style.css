@@ -37,6 +37,7 @@
   left: 29px;
 }
 .restaurant-image{
+   z-index: 1000;
    position: relative;
    left: 300px;
    bottom: 15px;
