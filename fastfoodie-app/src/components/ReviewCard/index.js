@@ -1,7 +1,7 @@
 import React from "react"
 import "./style.css"
 
-const Review = () => {
+const ReviewCard = () => {
   return(
     <div className="r-container">
       <h2 className="review-title">Recent Reviews</h2>
@@ -35,4 +35,4 @@ const Review = () => {
   )
 }
 
-export default Review
+export default ReviewCard
