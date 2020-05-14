@@ -1,10 +1,11 @@
 .footer{
   text-align: center;
   height: 80px;
-  background-color: #ffff00a3;
+  background-color:   #000000db;
   margin-bottom: 0;
 }
 
 .copy-right{
   margin: 0;
+  color: #ffff00a3;
 }
