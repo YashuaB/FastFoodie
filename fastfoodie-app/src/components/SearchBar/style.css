@@ -23,8 +23,20 @@
    
   }
   .search-food-btn{
-    position: relative;
+    /* position: relative;
     left: 1310px;
     bottom: 436px;
+    height: 62px; */
+
+
+    border-top-width: 0px;
+    border-left-width: 0px;
+    position: relative;
+    left: 1304px;
+    bottom: 436px;
     height: 62px;
+    background-color: #ff6233;
+    border-color: #ffff0000;
+    color: red;
+    border-radius: 0px 17px 17px 0px;
   }
