@@ -4,7 +4,7 @@ import "./style.css"
 const RpNav = () =>{
   return(
     <div>
-    <div className="nav">
+    <div className="rp-nav">
       <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#contact">Contact</a></li>

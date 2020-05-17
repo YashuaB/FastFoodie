@@ -1,0 +1,32 @@
+.nav {
+  position: absolute;
+    left: 60%;
+    top: 18px;
+    z-index: 10;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color:yellow;
+ 
+}
