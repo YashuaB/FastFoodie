@@ -22,7 +22,7 @@ const Card = () =>{
 class ResultCard extends Component {
 
     state = {
-      restaurantData: null;
+      restaurantData: null
     }
 
     render () {
