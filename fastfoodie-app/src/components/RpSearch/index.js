@@ -12,10 +12,10 @@ class RpSearch extends Component {
     return (
       <div className="search-container">
       <div className="search-text">
-      <input value="" name="searchItem" type="text" placeholder="Search..."></input>
+      <input className="secondary-searchbar" value="" name="searchItem" type="text" placeholder="Search..."></input>
       </div>
         <div className="search-zip">
-        <input value="" name="zipcode" type="text" placeholder="Zipcode..."></input>
+        <input className="secondary-searchbar" value="" name="zipcode" type="text" placeholder="Zipcode..."></input>
         </div>
       </div>
     )

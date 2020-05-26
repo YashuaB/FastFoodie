@@ -121,16 +121,15 @@ console.log("test1", searchItem)
             className="main-searchbar" 
             name="searchItem"
             type="text" 
-            
             placeholder="Search..." />
           </div>
          
         <div className="zip-field">
           <input 
           value={this.state.zipcode}
+          className="main-searchbar" 
           name="zipcode"
           type="text" 
-          className="main-searchbar" 
           placeholder="Zipcode..." />
         </div>
 

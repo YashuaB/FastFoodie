@@ -1,0 +1,13 @@
+.search-container{
+  position: relative;
+  left: 60%;
+  bottom:56px;
+}
+.secondary-searchbar{
+  height: 45px;
+}
+.search-zip{
+  position: relative;
+  left: 160px;
+  bottom: 51px;
+}

@@ -1,6 +1,6 @@
-.nav {
+.rp-nav {
   position: absolute;
-    left: 60%;
+    left: 80%;
     top: 18px;
     z-index: 10;
 }
@@ -19,7 +19,8 @@ li {
 
 li a {
   display: block;
-  color: white;
+  /* color: white; */
+  color: black;
   text-align: center;
   font-size: 22px;
   padding: 14px 16px;

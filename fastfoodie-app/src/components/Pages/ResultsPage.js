@@ -11,7 +11,6 @@ class ResultPage extends  Component {
   render(){
     return(
       <div>
-      <Header/>
       <RpNav/>
       <RpSearch/>
       <Map/>
