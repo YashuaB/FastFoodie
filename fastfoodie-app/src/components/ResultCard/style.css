@@ -1,5 +1,8 @@
 .result-container{
   width: 25%;
-  height: 12%;;
+  height: 12%;
+  position: relative;
+  left: 65%;
+  bottom: 422px;
   border: 1px solid black;
 }
