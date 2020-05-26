@@ -1,8 +1,24 @@
 .result-container{
-  width: 25%;
-  height: 12%;
+  width: 29%;
+   /* height: 55%; */
+   position: relative;
+   left: 64%;
+   bottom: 422px;
+   border: 1px solid black;
+}
+.result-body{
+  height: 266px;
+  }
+.rs-image{
+  padding-left: 21px;
+} 
+.result-text-body{
   position: relative;
-  left: 65%;
-  bottom: 422px;
-  border: 1px solid black;
+  width: 200px;
+  left: 273px;
+  bottom: 268px;
+
+}
+.rs-restaurant-name{
+  font-size: 21px;
 }
