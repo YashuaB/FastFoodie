@@ -6,7 +6,7 @@ import "./style.css"
 const Map = () =>{
   return(
     <div className="map-container">
-      <div></div>
+      <div className="map-body">Map</div>
     </div>
   )
 }

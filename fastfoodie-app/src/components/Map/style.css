@@ -1,5 +1,9 @@
 .map-container{
-  width: 55%;
-  height: 30%;
-  border: 1px solid black;
+  width: 49%;
+  position: relative;
+  left: 8%;
+  border: 1px solid black
+}
+.map-body{
+  padding-bottom: 400px;
 }
