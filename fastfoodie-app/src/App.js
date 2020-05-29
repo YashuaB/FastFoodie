@@ -4,9 +4,10 @@ import Home from '../src/components/Pages/Home'
 import Header from '../src/components/Header/index'
 import Footer from '../src/components/Footer/index'
 // import NavBar from '../src/components/Navbar/index'
-// import ResultPage from './components/Pages/ResultsPage';
+import UserProfile from '../src/components/Pages/UserProfile'
 import Wrapper from './components/Wrapper';
 import ResultPage from './components/Pages/ResultsPage';
+
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Header />
           <Route path="/" exact component={Home} />
           <Route path="/result-page" exact component={ResultPage}/>
+          <Route path="/user-page" exact component ={UserProfile}/>
         <Footer />
       </Wrapper>
     </Switch>
