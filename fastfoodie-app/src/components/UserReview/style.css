@@ -1,3 +1,30 @@
 .us-review-container{
-  height: 600px;
+  border: 1px solid;
+  position: relative;
+  width: 660px;
+  height: 241px;
+  left: 238px;
+  bottom: 166px;
+}
+.user-details-img{
+  position: relative;
+  left: 50px;
+  top: 20px;
+}
+.user-detail-name{
+  position: relative;
+  left: 132px;
+  bottom: 64px;
+}
+.user-text{
+  position: relative;
+  bottom: 47px;
+  width: 576px;
+  height: 83px;
+  margin: 0px 0px 0px 47.9844px
+}
+.sub-title{
+  position: relative;
+  bottom: 53px;
+  left: 125px;
 }
