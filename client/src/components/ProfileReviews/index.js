@@ -22,3 +22,5 @@ class ProfileReviews extends Component {
     )
   }
 }
+
+export default ProfileReviews
