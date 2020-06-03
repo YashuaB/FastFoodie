@@ -7,6 +7,7 @@ import Footer from '../src/components/Footer/index'
 import UserProfile from '../src/components/Pages/UserProfile'
 import Wrapper from './components/Wrapper';
 import ResultPage from './components/Pages/ResultsPage';
+import './App.css';
 
 
 function App() {

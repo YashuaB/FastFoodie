@@ -13,7 +13,7 @@ module.exports = function(sequelize, DataTypes){
       allowNull: false 
     },
     rating:{
-      type: DataTypes.NUMBER,
+      type: DataTypes.INTEGER,
       allowNull:true
     },
     image:{
@@ -25,7 +25,7 @@ module.exports = function(sequelize, DataTypes){
       allowNull:false
     },
     zipcode:{
-      type: DataTypes.NUMBER,
+      type: DataTypes.INTEGER,
       allowNull:true
     }
   })

@@ -20,13 +20,15 @@ li {
 li a {
   display: block;
   /* color: white; */
-  color: black;
+ 
   text-align: center;
   font-size: 22px;
   padding: 14px 16px;
   text-decoration: none;
 }
-
+.hm, .ct, .ab{
+  color: black;
+}
 li a:hover {
   color:yellow;
  
