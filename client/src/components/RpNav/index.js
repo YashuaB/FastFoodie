@@ -7,7 +7,6 @@ const RpNav = () =>{
     <div className="rp-nav">
       <ul>
       <li><a className="hm" href="#home">Home</a></li>
-      <li><a className="ct" href="#contact">Contact</a></li>
       <li><a className="ab" href="#about">About</a></li>
       </ul>
     </div>
