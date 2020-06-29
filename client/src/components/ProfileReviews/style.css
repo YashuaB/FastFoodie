@@ -1,4 +1,52 @@
 .underline{
-    width: 50px;
-    border: 1px;
+    width: 249px;
+    border-bottom: 1px solid black;
+    position: relative;
+    bottom: 25px;
+    left: 150px;
+}
+
+.pr-title{
+    padding-top: 10px;
+}
+
+.profile-img{
+  position: relative;  
+  left: 142px;
+  top: 20px;
+}
+
+.pr-reviews-body{
+    position: relative;
+    left: 144px;
+   
+}
+
+.pr-reviews-detail{
+    border: 1px solid black;
+    width: 400px;
+    margin-bottom: 13px;
+}
+
+.pr-res-image{
+    position: relative;
+    bottom: 39px;
+    left: 13px;
+}
+
+.pr-res-name{
+    position: relative;
+    left: 58px;
+    top: 12px;
+}
+
+.pr-res-rating{
+    position: relative;
+    left: 58px;
+}
+
+.pr-review-date{
+    bottom: 6px;
+    position: relative;
+    left: 188px;
 }
