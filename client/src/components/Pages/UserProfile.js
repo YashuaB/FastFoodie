@@ -3,6 +3,7 @@ import {Component} from "react"
 import RpNav from "../RpNav/index"
 import ProfileImage from "../ProfileImage/index"
 import ProfileReviews from "../ProfileReviews/index"
+import ProfileFavorites from "../ProfileFavorite"
 
 
 
@@ -18,6 +19,7 @@ class UserProfile extends Component{
       <RpNav/>
       <ProfileImage/>
       <ProfileReviews/>
+      <ProfileFavorites/>
       </div>
     )
   }

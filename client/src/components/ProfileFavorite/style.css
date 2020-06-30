@@ -1,0 +1,11 @@
+.pr-fav-container{
+    position: relative;
+    left: 52%;
+    bottom: 389px;
+}
+
+.pr-fav-detail{
+    border: 1px solid black;
+    width: 480px;
+    height: 150px;
+}
