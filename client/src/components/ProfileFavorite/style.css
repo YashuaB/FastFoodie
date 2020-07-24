@@ -1,11 +1,29 @@
 .pr-fav-container{
+    width: 500px;
     position: relative;
     left: 52%;
-    bottom: 389px;
+    /* bottom: 389px; */
+    bottom: 334px;
 }
 
 .pr-fav-detail{
     border: 1px solid black;
     width: 480px;
     height: 150px;
+    margin-bottom: 13px;
+}
+.fav-underline{
+    width: 330px;
+    border-bottom: 1px solid black;
+    position: relative;
+    bottom: 25px;
+    left: 150px;
+}
+.fav-res-image{
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+.fav-res-rating, .fav-res-name{
+padding-left: 20px;
 }

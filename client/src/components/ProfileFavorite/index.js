@@ -7,7 +7,7 @@ const Favorites = (props) => {
     return (
       <div className="pr-fav-detail">
         <div className="fav-res-name">{props.resName}</div>
-        <div className="fav-res-rating">You rated: {props.resRating}</div>
+        <div className="fav-res-rating">Rated: {props.resRating}</div>
         <a href={props.resLink}><img className="fav-res-image" alt={props.resAlt} src={props.resImage}/></a>
       </div>
     )
