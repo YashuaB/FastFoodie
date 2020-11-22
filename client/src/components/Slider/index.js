@@ -1,6 +1,7 @@
 import React from "react"
 import {Component} from "react"
 import SearchBar from "../SearchBar/index"
+import GoogleAutoComplete from "../GoogleAutoComplete"
 import "./style.css"
 import Ham from "../images/ham2.jpg"
 
