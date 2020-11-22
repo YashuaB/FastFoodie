@@ -13,15 +13,14 @@ dotenv.config()
    
 
 class SearchBar extends Component{
+
  state = {
   searchResults: null,
   address: "",
-  
-
-  //  zipcode: "",
-   searchItem:"",
-   placeIdData: null,
-   image: null
+  zipcode: "",
+  searchItem:"",
+  placeIdData: null,
+  image: null
  }
  
 
@@ -38,8 +37,7 @@ class SearchBar extends Component{
   // Getting the value and name of the input which triggered the change
   handleInputChange = (e) => {
     const {name , value} = e.target
-    // const value = e.target.value
-    // const name = e.target.value
+  
   // Updating the input's state
     this.setState({
       [name]:value
@@ -50,9 +48,13 @@ class SearchBar extends Component{
   handleFormSubmit = (e) => {
     e.preventDefault()
 
-  this.setState({searchItem:this.state.searchItem})
+  this.setState({
+    searchItem:this.state.searchItem,
+    zipcode:this.state.zipcode
+  })
+
   this.sendGetReq()
-    // const searchZip = e.target.zipcode.value
+    
     let apiKey2 = process.env.REACT_APP_API_KEY
     let pictureUrl = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=CnRtAAAATLZNl354RwP_9UKbQ_5Psy40texXePv4oAlgP4qNEkdIrkyse7rPXYGd9D_Uj1rVsQdWT4oRz4QrYAJNpFX7rzqqMlZw2h2E2y5IKMUZ7ouD_SlcHxYq1yL4KbKUv3qtWgTK0A6QbGh87GB3sscrHRIQiG2RrmU_jF4tENr9wGS_YxoUSSDrYjWmrNfeEHSGSc3FyhNLlBU&key=${apiKey2}`
     axios
@@ -142,7 +144,7 @@ class SearchBar extends Component{
   }
 
  async sendGetReq ()  {
-
+  let zipcode = this.state.zipcode
   let searchItem = this.state.searchItem
   let apiKey = process.env.REACT_APP_API_KEY
   let longitude = 35.7596
@@ -178,9 +180,8 @@ class SearchBar extends Component{
   // .get(url[instance])
   .get(detailUrl)
   .then(res => {
-     const data = res.data
-     
     
+     const data = res.data
      console.log(data)
   })
   .catch( error => {
