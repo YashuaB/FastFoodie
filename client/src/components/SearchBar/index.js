@@ -36,6 +36,7 @@ class SearchBar extends Component{
 // }
   // Getting the value and name of the input which triggered the change
   handleInputChange = (e) => {
+
     const {name , value} = e.target
   
   // Updating the input's state
@@ -55,21 +56,7 @@ class SearchBar extends Component{
 
   this.sendGetReq()
     
-    let apiKey2 = process.env.REACT_APP_API_KEY
-    let pictureUrl = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=CnRtAAAATLZNl354RwP_9UKbQ_5Psy40texXePv4oAlgP4qNEkdIrkyse7rPXYGd9D_Uj1rVsQdWT4oRz4QrYAJNpFX7rzqqMlZw2h2E2y5IKMUZ7ouD_SlcHxYq1yL4KbKUv3qtWgTK0A6QbGh87GB3sscrHRIQiG2RrmU_jF4tENr9wGS_YxoUSSDrYjWmrNfeEHSGSc3FyhNLlBU&key=${apiKey2}`
-    axios
-    // .get(url[instance])
-    .get(pictureUrl)
-    .then(res => {
-       const data =  res.data
-       this.setState({image:data})
-      
-       console.log(data)
-       
-    })
-    .catch( error => {
-      console.log(error)
-    })
+    
     
 // // Create a new yelpAPI object with your API key
 // let apiKey = process.env.API_KEY;
@@ -180,13 +167,30 @@ class SearchBar extends Component{
   // .get(url[instance])
   .get(detailUrl)
   .then(res => {
-    
+
      const data = res.data
      console.log(data)
   })
   .catch( error => {
     console.log(error)
   })
+
+
+  let apiKey2 = process.env.REACT_APP_API_KEY
+    let pictureUrl = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=CnRtAAAATLZNl354RwP_9UKbQ_5Psy40texXePv4oAlgP4qNEkdIrkyse7rPXYGd9D_Uj1rVsQdWT4oRz4QrYAJNpFX7rzqqMlZw2h2E2y5IKMUZ7ouD_SlcHxYq1yL4KbKUv3qtWgTK0A6QbGh87GB3sscrHRIQiG2RrmU_jF4tENr9wGS_YxoUSSDrYjWmrNfeEHSGSc3FyhNLlBU&key=${apiKey2}`
+    axios
+    // .get(url[instance])
+    .get(pictureUrl, {responseType: "blob"})
+    .then(res => {
+       const data =  URL.createObjectURL(res.data) 
+       this.setState({image:data})
+      
+       console.log(data)
+       
+    })
+    .catch( error => {
+      console.log(error)
+    })
  }
 
  
@@ -216,7 +220,9 @@ class SearchBar extends Component{
           type="text" 
           placeholder="Zipcode..." />
         </div>
-
+          <div>
+          <img src={this.state.image}/>
+          </div>
               <button className="search-food-btn ">Submit</button>
         </div>
 
