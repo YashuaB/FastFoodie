@@ -151,7 +151,7 @@ class SearchBar extends Component{
   
 
  await axios
-  // .get(url[instance])
+
   .get(url)
   .then(res => {
      const data =  res.data
@@ -168,7 +168,6 @@ class SearchBar extends Component{
   let detailUrl = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=name,rating,formatted_phone_number,review,photo&key=${apiKey}`
 
   await axios
-  // .get(url[instance])
   .get(detailUrl)
   .then(res => {
 
@@ -186,14 +185,15 @@ class SearchBar extends Component{
   })
 
 
-  let apiKey2 = process.env.REACT_APP_API_KEY
+  
   let resWidth = this.state.imgResultWidth
   let resHeight = this.state.imgResultHeight
-  let resAttr = this.state.imgResultHtmlAttr
   let resRef = this.state.imgResultRef
-    let pictureUrl = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/photo?maxwidth=${resWidth}&maxHeight${resHeight}&photoreference=${resRef}&key=${apiKey2}`
+  // let resAttr = this.state.imgResultHtmlAttr
+  
+    let pictureUrl = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/photo?maxwidth=${resWidth}&maxHeight${resHeight}&photoreference=${resRef}&key=${apiKey}`
+
     axios
-    // .get(url[instance])
     .get(pictureUrl, {responseType: "blob"})
     .then(res => {
        const data =  URL.createObjectURL(res.data) 
@@ -234,9 +234,6 @@ class SearchBar extends Component{
           type="text" 
           placeholder="Zipcode..." />
         </div>
-          <div>
-          <img src={this.state.image}/>
-          </div>
               <button className="search-food-btn ">Submit</button>
         </div>
 
