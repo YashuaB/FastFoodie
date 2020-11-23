@@ -20,7 +20,11 @@ class SearchBar extends Component{
   zipcode: "",
   searchItem:"",
   placeIdData: null,
-  image: null
+  image: null,
+  imgResultWidth: "",
+  imgResultHeight: "",
+  imgResultHtmlAttr: "",
+  imgResultRef: ""
  }
  
 
@@ -169,7 +173,13 @@ class SearchBar extends Component{
   .then(res => {
 
      const data = res.data
-     console.log(data)
+     this.setState({
+      imgResultWidth: data.result.photos[0].width ,
+      imgResultHeight: data.result.photos[0].height,
+      imgResultHtmlAttr: data.result.photos[0].html_attributions,
+      imgResultRef: data.result.photos[0].photo_reference
+     })
+     console.log(data.result.photos[0].photo_reference)
   })
   .catch( error => {
     console.log(error)
@@ -177,7 +187,11 @@ class SearchBar extends Component{
 
 
   let apiKey2 = process.env.REACT_APP_API_KEY
-    let pictureUrl = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=CnRtAAAATLZNl354RwP_9UKbQ_5Psy40texXePv4oAlgP4qNEkdIrkyse7rPXYGd9D_Uj1rVsQdWT4oRz4QrYAJNpFX7rzqqMlZw2h2E2y5IKMUZ7ouD_SlcHxYq1yL4KbKUv3qtWgTK0A6QbGh87GB3sscrHRIQiG2RrmU_jF4tENr9wGS_YxoUSSDrYjWmrNfeEHSGSc3FyhNLlBU&key=${apiKey2}`
+  let resWidth = this.state.imgResultWidth
+  let resHeight = this.state.imgResultHeight
+  let resAttr = this.state.imgResultHtmlAttr
+  let resRef = this.state.imgResultRef
+    let pictureUrl = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/photo?maxwidth=${resWidth}&maxHeight${resHeight}&photoreference=${resRef}&key=${apiKey2}`
     axios
     // .get(url[instance])
     .get(pictureUrl, {responseType: "blob"})
