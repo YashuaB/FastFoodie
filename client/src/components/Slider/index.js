@@ -1,30 +1,20 @@
 import React from "react"
 import {Component} from "react"
 import SearchBar from "../SearchBar/index"
-import GoogleAutoComplete from "../GoogleAutoComplete"
 import "./style.css"
 import Ham from "../images/ham2.jpg"
 
 
-// const SearchBar = () => {
-//   return(
-//     <div>
-//       <input type="text" className="main-searchbar" placeholder="Search..." />
-//     </div>
-//   )
-// }
-
-const Slider = () => {
+const Slider = (props) => {
+  
   return(
+
     <div className="outer-container">
-      
     <h1 className="slider-text">Hello, let's find some great eats.</h1>
       <Carousel/>
-     <SearchBar />
+      <SearchBar 
+     {...props}/>
       </div>
-
-      
-    
     
   )
 }
