@@ -5,12 +5,14 @@ import RpSearch from '../RpSearch'
 import UserReview from '../UserReview/index'
 import ResultCard from "../ResultCard"
 
- const ResultPage = ({props}) => {
+ const ResultPage = (props) => {
   
     return(
       <div>
       <RpNav/>
-      <RpSearch  handleInputChange={props.handleInputChange} handleFormSubmit={props.handleFormSubmit}/>
+      <RpSearch 
+      {...props}
+      />
       <Map/>
       <ResultCard/>
       <UserReview/>

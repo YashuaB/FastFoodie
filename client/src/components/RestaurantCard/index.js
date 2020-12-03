@@ -32,7 +32,7 @@ class RestaurantCard extends Component {
       <div>
         <div className="restaurantCard-container">
         <h2 className="title">New Tasty Bites</h2>
-        {this.state.resData.map(data => (
+        {this.state.resData.slice(0,2).map(data => (
           <CardContainer 
             name={data.restaurant} 
             image={data.image}

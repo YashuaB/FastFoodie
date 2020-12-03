@@ -4,7 +4,7 @@ import {UserContent} from "../../App"
 import  "./style.css"
 
 
-const RpSearch = ({props}) =>{
+const RpSearch = (props) =>{
  
    
     return (

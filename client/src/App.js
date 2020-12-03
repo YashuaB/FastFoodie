@@ -58,7 +58,7 @@ class App extends Component {
   let apiKey = process.env.REACT_APP_API_KEY
   let longitude = 35.7596
   let latidude = 79.0193
-  let url = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${searchItem}&inputtype=textquery&fields=photos,formatted_address,name,place_id,rating,opening_hours,geometry&key=${apiKey}`
+  let url = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=${searchItem}&inputtype=textquery&fields=photos,formatted_address,name,place_id,rating,opening_hours,geometry&key=${apiKey}`
   
   
 
@@ -90,6 +90,7 @@ class App extends Component {
       imgResultHtmlAttr: data.result.photos[0].html_attributions,
       imgResultRef: data.result.photos[0].photo_reference
      })
+     
      console.log(data.result.photos[0].photo_reference)
   })
   .catch( error => {
