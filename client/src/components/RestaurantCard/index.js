@@ -39,7 +39,7 @@ class RestaurantCard extends Component {
             link={data.url}
             restaurantName={data.restaurant}
             rating={data.rating}
-            link={data.url}
+           
             />) )}
           
         </div>
