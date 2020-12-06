@@ -59,8 +59,7 @@ class App extends Component {
   let longitude = 35.7596
   let latidude = 79.0193
   let url = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json?query=${searchItem}&inputtype=textquery&fields=photos,formatted_address,name,place_id,rating,opening_hours,geometry&key=${apiKey}`
-  
-  
+
 
  await axios
 
@@ -69,6 +68,7 @@ class App extends Component {
      const data =  res.data
      this.setState({searchResults: data})
     
+     console.log("Res For Restaurant Card", data.results[0].name)
      console.log(data)
      this.setState({placeIdData:data.candidates[0].place_id})
   })

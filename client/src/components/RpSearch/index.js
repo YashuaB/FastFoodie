@@ -1,6 +1,4 @@
 import React from "react"
-import {Component} from "react"
-import {UserContent} from "../../App"
 import  "./style.css"
 
 

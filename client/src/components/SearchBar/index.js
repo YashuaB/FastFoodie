@@ -1,19 +1,10 @@
 import React from "react"
-import {Component} from "react"
 import "./style.css"
 
-
-// const getApi = require("/FastFoodie/server/routes/restaurant-api-routes.js")  
-// import yelpAPI from "yelp-api"
-import axios from "axios"
-// import cors from "cors"
-const dotenv = require("dotenv")
-dotenv.config()
 
    
 const SearchBar = (props) =>{
   
-
 
     return(
       <form className="form-body" onSubmit={props.handleFormSubmit}>

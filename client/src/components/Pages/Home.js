@@ -14,7 +14,9 @@ const Home = (props) =>  {
       <SignUpButton/>
       <Slider 
       {...props} />
-      <RestruantCard/>
+      <RestruantCard
+      {...props}
+      />
       <ReviewCard/>
       </div>
     )
